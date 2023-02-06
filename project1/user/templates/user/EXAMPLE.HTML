@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="shortcut Icon" type="Image/png" href="img\cinilogo.png">
+      <title>CINI REVIEW</title>
+    </head>
+    <body>
+      
+
+      <div class="logo">
+        <img class="logo_img" src="img\cinilogo.png" >
+        <p><b>CINI REVIEW</b></p>
+        <div class="search">
+          <form action="#">
+              <input type="text"
+                  placeholder=" Search Movies"
+                  name="search">
+              
+                  
+          </form>          
+       </div>
+       <form class="submit">
+       <input type="image" src="img/search-icon.png">
+       </form>
+
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          
+           <a class="nav-link" href="index.html"></a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="login.html">LOG IN</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+     <div class="login_logo"><img src="img/userlogo.png"/>
+    <p><a href="#">LOGIN/SIGNUP</a></p></div>
+      </div>
+
+
+      
+<div class="slideshow-container">
+
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 4</div>
+     <a href="https://www.imdb.com/title/tt11301946/" target="_blank"><img src="C:\Users\Apple\Desktop\Example\img\beast1.jpg" width="600" height="375"/></a>
+     <div class="text">BEAST</div>
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 4</div>
+     <a href="https://www.imdb.com/title/tt8178634/" target="_blank"><img src="C:\Users\Apple\Desktop\Example\img\RRR1.jpg" width="600" height="375"/></a>
+     <div class="text">RRR</div>
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext">3 / 4</div>
+     <a href="https://www.imdb.com/title/tt10701074/" target="_blank"><img src="C:\Users\Apple\Desktop\Example\img\ps.jpg" width="600" height="375"/></a>
+     <div class="text">PONNIYIN SELVAN</div>
+   </div>
+
+   <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <a href="https://www.imdb.com/title/tt10806040/" target="_blank"><img src="C:\Users\Apple\Desktop\Example\img\valimai.jpg" width="600" height="375"/></a>
+      <div class="text">VALIMAI</div>
+    </div>
+   
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+   
+   
+   <br>
+   
+   <div class="pointer">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+     <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+   </div>
+   
+  
+   
+   
+   
+   <script>
+   let slideIndex = 1;
+   showSlides(slideIndex);
+   
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+   
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+   
+   function showSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     let dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}    
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active";
+   }
+   </script>
+<br>
+  <div class="fixed"> <h3>Latest Movie Trailers</h3>
+    <iframe width="300" height="auto" src="https://www.youtube.com/embed/0E1kVRRi6lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p> Beast - Official Trailer | Thalapathy Vijay | Sun Pictures | Nelson | Anirudh | Pooja Hegde</p>
+
+    <iframe width="300" height="auto" src="https://www.youtube.com/embed/Xjw4ZbCIYS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    <p>Love Today | Official Trailer | Pradeep Ranganathan, Ivana, Yogi Babu, Sathyaraj </p>
+
+    <iframe width="300" height="auto" src="https://www.youtube.com/embed/Gc6dEDnL8JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    <p>Jai Bhim - Official Tamil Trailer | Suriya | New Tamil Movie 2021 </p>
+    
+    <iframe width="300" height="auto" src="https://www.youtube.com/embed/tNnPHz1u3RM?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    <p>Thiruchitrambalam – Official Trailer | Dhanush | Sun Pictures | Anirudh | Mithran R Jawahar</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
+
+
+
+   
+
+    
+
+     

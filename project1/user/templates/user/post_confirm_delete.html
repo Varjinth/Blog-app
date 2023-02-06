@@ -1,0 +1,25 @@
+{% extends "user/base.html" %} 
+{% block content %}
+
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ object.author }}</a>
+              <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2 class="article-title"> {{ object.title }}</h2>
+          </div>
+            <form method="post">
+                {% csrf_token %}
+               
+            
+            <p class="article-content">Are you sure want to delete this post?</p>
+          
+          <div class="form-group">
+            <button class="btn btn-outline-danger" type="submit">yes</button>
+            <a class="btn btn-outline-secondary" href="{% url 'Post-detail' object.id%}">cancel</a>
+        </div>
+    </form>
+        </article>
+{% endblock content %}
