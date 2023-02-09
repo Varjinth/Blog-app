@@ -143,14 +143,13 @@ LOGIN_URL = "login"
 # EMAIL_HOST_USER = "selvakumar@gmail.com"
 # EMAIL_HOST_PASSWORD = "Selva@1"
 
-# EMAIL_HOST_USER = "varjinths@gmail.com"
-# EMAIL_HOST_PASSWORD = "7547432907"   #7092457347
+
 
 # EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 # EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = "varjinths@gmail.com"
+EMAIL_HOST_USER = "yourmail@gmail.com"
 EMAIL_HOST_PASSWORD ="hilxyvwsaxfxzjuy"
 
 EMAIL_PORT = 587
